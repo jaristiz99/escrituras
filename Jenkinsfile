@@ -2,19 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
-            steps {
-                echo 'Hola desde Jenkins Pipeline!'
-            }
-        }
-    }
-}
-Guárdalo como Jenkinsfile (sin extensión) en la raíz del repositorio y haz push. Eso es todo lo mínimo necesario para que Jenkins lo detecte y ejecute.
-Si quieres uno un poco más completo pero igual de simple:
-groovypipeline {
-    agent any
-
-    stages {
         stage('Inicio') {
             steps {
                 echo '==============================='
